@@ -153,19 +153,19 @@ address {
     justify-content: space-between;
 }
 
-#trends-section__article-1 {
+#trends-section__first {
 	background-image: url("../img/trend1.jpg");
 }
 
-#trends-section__article-2 {
+#trends-section__second {
 	background-image: url("../img/trend2.jpg");
 }
 
-#trends-section__article-3 {
+#trends-section__third {
 	background-image: url("../img/trend3.jpg");
 }
 
-#trends-section__article-4 {
+#trends-section__fourth {
 	background-image: url("../img/trend4.jpg");
 }
 
@@ -173,7 +173,6 @@ address {
     position: relative;
     display: flex;
     align-items: flex-end;
-    /* height: 100%; */
     padding-bottom: 15px;
     background-color: #606260;
     background-position: center center;
@@ -279,7 +278,7 @@ address {
     margin-top: 22px;
 }
 
-.minimized-article {
+.latest-posts-section__post {
     display: flex;
 }
 
@@ -651,7 +650,7 @@ address {
 /* ========== Mobile-start======== */
 @media screen and (max-width: 640px) {
     .trends-section, 
-    .posts-section, 
+    .main-bar, 
     .aside-bar__section, 
     .shop-section, 
     .site-footer {
@@ -726,7 +725,7 @@ address {
         padding-right: 15px;
     }
 
-    .posts-section__post {
+    .expanded-article {
         margin-bottom: 25px;
     }
 
@@ -739,7 +738,7 @@ address {
         margin-bottom: 23px;
     }
 
-    .posts-section__post:nth-child(n+2):before {
+    .expanded-article:nth-child(n+3)::before {
         content: "";
         display: block;
         width: 100%;
@@ -877,7 +876,7 @@ address {
         margin-right: 35px;
     }
 
-    .posts-section__post {
+    .expanded-article {
         margin-bottom: 23px;
     }
 
@@ -890,7 +889,7 @@ address {
         margin-bottom: 36px;
     }
 
-    .posts-section__post:nth-child(n+2):before {
+    .expanded-article:nth-child(n+3)::before {
         content: "";
         display: block;
         width: 100%;
@@ -915,7 +914,7 @@ address {
         margin-top: 60px;
     }
 
-    .section-title_aside {
+    h2.section-title_aside {
         font-size: 14px;
     }
 /***************** ASIDE-END *****************/
@@ -1066,9 +1065,7 @@ address {
     /* ----------- Section TRENDS-START ------------*/
 
     .trends-section {
-        max-width: 1660px;
-        margin-left: auto;
-        margin-right: auto;
+        max-width: 100%;
     }
 
     .section-title {
@@ -1106,7 +1103,7 @@ address {
         width: 770px;
     }
 
-    .posts-section__post:nth-child(n+2) {
+    .expanded-article:nth-child(n+3) {
         margin-top: 59px;
     }
 
@@ -1145,7 +1142,7 @@ address {
         width: 271px;
     }
 
-    .section-title_aside {
+    h2.section-title_aside {
         font-size: 14px;
     }
 
